@@ -1,0 +1,77 @@
+.todo-app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+  font-family: Arial, sans-serif;
+}
+
+h1 {
+  color: blue;
+}
+
+.tab-container {
+  display: flex;
+  margin-top: 20px;
+}
+
+.tab {
+  padding: 10px;
+  margin-right: 10px;
+  background-color: lightblue;
+  border: none;
+  cursor: pointer;
+}
+
+.tab.active {
+  background-color: blue;
+  color: white;
+}
+
+.todo-form {
+  margin-top: 20px;
+}
+
+.todo-form input[type='text'] {
+  padding: 5px;
+}
+
+.todo-form button[type='submit'] {
+  padding: 5px 10px;
+}
+
+.todo-list {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+}
+
+.todo-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.todo-item.completed .todo-content {
+  text-decoration: line-through;
+  color: gray;
+}
+
+.todo-content {
+  margin-left: 10px;
+}
+
+.trash-icon {
+  color: red;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.delete-all-button {
+  margin-top: 20px;
+  padding: 5px 10px;
+  background-color: red;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
